@@ -1,0 +1,39 @@
+.card {
+    max-width: 712px;
+    position: relative;
+    border: var(--card-border) !important;
+    background: var(--card-background),
+        var(--card-gradient);
+    border-radius: 32px;
+    z-index: 100;
+
+    &.reveal {
+        transform: perspective(3300px) translate3d(0px, 18px, 75px) rotateX(30deg) scale(0.9, 0.9);
+        -webkit-transform: perspective(3300px) translate3d(0px, 18px, 75px) rotateX(30deg) scale(0.9, 0.9);
+        transform-style: preserve-3d;
+        opacity: 0;
+    }
+
+    &.animated {
+        transition: transform 0.5s ease-in 0.5s, opacity 0.5s ease;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width:705px) {
+    .card {
+        padding: 32px 24px 40px 24px;
+        border-radius: 24px;
+        transform: none !important;
+    }
+
+    .card:not(.tokenomic-card) {
+        width: 100%;
+        min-width: 100% !important;
+    }
+
+}

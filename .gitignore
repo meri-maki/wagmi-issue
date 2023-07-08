@@ -1,0 +1,12 @@
+/.idea/
+/.vscode/
+/.settings/
+/node_modules/
+/build/
+/release/
+/.buildpath
+/.project
+/public/price.json
+/dist/price.json
+/build/price.json
+/.env

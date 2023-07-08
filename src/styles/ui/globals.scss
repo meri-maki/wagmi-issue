@@ -1,0 +1,238 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000000;
+    --color-white-semitransparent: rgba(255, 255, 255, 0.6);
+    --primary-100: #0066FF;
+    --primary-200: #F79F1F;
+    --primary-300: #00C6E0;
+    --accent-100: #CC33CC;
+    --accent-200: #fae8ff;
+
+    --color-error: #EE5A24;
+    --color-error-semi: #804124E5;
+    --text-200: #D4D4D8;
+    --bg-100: #101012;
+    --bg-200: #18181B;
+    --bg-300: #3F3F46;
+
+
+    --button-gradient: linear-gradient(78deg, var(--primary-300) 1%, var(--primary-200) 99%);
+
+
+    --glass-filter: blur(12px);
+    --glass-border: solid 1px rgba(255, 255, 255, 0.15);
+    --glass-background: rgba(255, 255, 255, 0.15);
+
+
+    --card-bottom-color: var(--bg-200);
+    --card-border: 1px solid transparent;
+    --card-background: linear-gradient(180deg, var(--bg-100) 0%, var(--card-bottom-color) 100%) padding-box;
+
+
+    --card-gradient: linear-gradient(98.93deg, #7D7D7D 2.77%, var(--color-white) 35.48%, var(--bg-100) 91.6%) border-box;
+    --card-width: 480px;
+    --texts-width: 480px;
+
+
+    --headerHeight: 56px;
+
+    --spacerHeight: calc(var(--headerHeight) + 20px);
+
+    --footerHeight: 169px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+
+
+    color: var(--color-white);
+    background-color: var(--bg-100);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+
+    --h1-size: 48px;
+    --h2-size: 32px;
+    --h3-size: 24px;
+    --h4-size: 16px;
+    --h5-size: 20px;
+    --p-size: 16px;
+    --p2-size: 12px;
+
+    --h1-lh: 64px;
+    --h2-lh: 48px;
+    --h3-lh: 40px;
+    --h4-lh: 24px;
+    --h5-lh: 20px;
+    --p-lh: 24px;
+    --p2-lh: 18px;
+
+    --h1-mb: 32px;
+    --h2-mb: 24px;
+    --h3-mb: 24px;
+    --h4-mb: 48px;
+    --h5-mb: 16px;
+    --p-mb: 24px;
+
+    --note-padding: 24px;
+    --note-transparent-padding: 24px;
+    --note-background: rgba(132, 61, 255, 0.24);
+
+    --btn-size: 12px;
+    --btn-lh: 16px;
+    --btn-padding: 8px 24px;
+    --btn-full-w: auto;
+    --btn-large-w: fit-content;
+    --btn-radius: 56px;
+
+    --list-gap: 24px;
+    --list-item-w: auto;
+
+    /* ---------------------- MARGINS FOR HEADER AND FOOTER --------------------- */
+    --mg-lr: 24px;
+    /* -------------------------------------------------------------------------- */
+
+    /* ------------------ MARGINS FOR MAIN SECTIONS (CARDS BORDER) -------------- */
+    --mg-main: 8px;
+    /* -------------------------------------------------------------------------- */
+
+
+    /* ---------------------- MARGINS FOR ADDITIONAL MARGINS -------------------- */
+    --mbl-mg: 16px;
+    /* -------------------------------------------------------------------------- */
+
+
+    --grid-lr: 0px;
+
+    --icon-size: 32px;
+    --section-content-left-margin: 30px;
+
+    --card-width: 480px;
+    --texts-width: 400px;
+
+    --topPadding: 56px;
+
+    --heroBottom: calc(var(--headerHeight) + 80px);
+    --sectionBottom: 120px;
+    --roadmapBottom: 175px;
+}
+
+
+@media screen and (min-width:706px) {
+    :root {
+        --h1-size: 64px;
+        --h2-size: 40px;
+        --h4-size: 24px;
+
+        --h1-lh: 80px;
+        --h2-lh: 56px;
+        --h4-lh: 40px;
+
+        --h1-mb: 48px;
+        --h4-mb: 80px;
+        --h2-mb: 40px;
+
+        --btn-size: 16px;
+        --btn-lh: 24px;
+        --btn-padding: 12px 40px;
+        --btn-large-w: 320px;
+        --btn-full-w: 100%;
+
+        --note-padding: 24px 40px var(--p-mb);
+        --note-transparent-padding: 24px 40px;
+
+
+        /* ---------------------- MARGINS FOR HEADER AND FOOTER --------------------- */
+        --mg-lr: 48px;
+        /* -------------------------------------------------------------------------- */
+
+        /* ------------------ MARGINS FOR MAIN SECTIONS (CARDS BORDER) -------------- */
+        --mg-main: 48px;
+        /* -------------------------------------------------------------------------- */
+
+
+        /* ---------------------- MARGINS FOR ADDITIONAL MARGINS -------------------- */
+        --mbl-mg: 0px;
+        /* -------------------------------------------------------------------------- */
+
+        --grid-lr: 0px;
+
+        --headerHeight: 64px;
+        --footerHeight: 71px;
+
+        --list-item-w: auto;
+        --topPadding: 64px;
+
+        --heroTextWidth: 350px;
+
+        --heroBottom: 0;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    :root {
+        --h1-size: 80px;
+        --h2-size: 48px;
+        --h3-size: 32px;
+        --h4-size: 32px;
+
+
+        --h1-lh: 96px;
+        --h2-lh: 64px;
+        --h3-lh: 48px;
+        --h4-lh: 48px;
+
+
+
+        --h1-mb: 64px;
+        --h2-mb: 48px;
+        --h4-mb: 72px;
+
+
+        --btn-padding: 16px 40px;
+        --btn-large-w: fit-content;
+        --btn-full-w: auto;
+        --section-content-left-margin: 76px;
+        --mg-lr: 64px;
+
+        --grid-lr: 64px;
+
+        --card-width: 480px;
+        --texts-width: 480px;
+        --heroTextWidth: 480px;
+
+        --headerHeight: 90px;
+        --footerHeight: 87px;
+
+        --list-item-w: 480px;
+
+
+
+        /* ---------------------- MARGINS FOR HEADER AND FOOTER --------------------- */
+        --mg-lr: 64px;
+        /* -------------------------------------------------------------------------- */
+
+        /* ------------------ MARGINS FOR MAIN SECTIONS (CARDS BORDER) -------------- */
+        --mg-main: 64px;
+        /* -------------------------------------------------------------------------- */
+
+
+        /* ---------------------- MARGINS FOR ADDITIONAL MARGINS -------------------- */
+        --mbl-mg: 0px;
+        /* -------------------------------------------------------------------------- */
+
+        --topPadding: 56px;
+
+        --sectionBottom: 160px;
+        --roadmapBottom: 200px;
+    }
+}
+
+@media screen and (min-width:1221px) {
+    :root {
+        --heroBottom: calc(var(--headerHeight) + 100px);
+    }
+}

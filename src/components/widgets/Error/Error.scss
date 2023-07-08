@@ -1,0 +1,86 @@
+.error-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - var(--headerHeight));
+    text-align: center;
+    gap: 40px;
+
+    padding-top: 60px;
+    padding-bottom: 48px;
+    margin: 0 var(--mg-lr);
+
+    .blue {
+        bottom: -65%;
+        left: -50%;
+        z-index: -1;
+    }
+
+    .pink {
+        bottom: -5%;
+        right: -19%;
+        z-index: -1;
+    }
+
+    .coin-1 {
+        right: 35%;
+        bottom: 5%;
+        width: 40px;
+        height: auto;
+        filter: blur(2px);
+        transform: rotate(26deg);
+    }
+
+    .coin-2 {
+        left: 71%;
+        top: 49%;
+        transform: rotate(326deg);
+    }
+
+    .coin-3 {
+        left: 1%;
+        top: 47%;
+        transform: rotate(326deg);
+    }
+
+    .metal-1 {
+        right: 5%;
+        top: 65%;
+        transform: rotate(45deg);
+        width: 80px;
+        height: auto;
+    }
+
+    .metal-2 {
+        right: 28%;
+        top: 16%;
+        transform: rotate(21deg);
+    }
+
+    .coin-4 {
+        left: 26%;
+        top: 14%;
+    }
+
+
+}
+
+@media screen and (max-height: 700px) and (min-width: 1023px) {
+    .error-page {
+        height: auto;
+
+    }
+}
+
+
+
+@media screen and (max-width:705px) {
+    .error-page {
+        .main {
+            height: 240px;
+            width: 240px;
+        }
+    }
+}

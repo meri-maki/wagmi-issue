@@ -1,0 +1,161 @@
+:root {
+    --wcm-z-index: 1001 !important;
+}
+
+.buy {
+    --buy-text-width: 640px;
+    margin: 0 auto;
+    max-width: 1440px;
+    top: var(--headerHeight);
+    position: relative;
+
+    .note-transparent {
+        width: 100%;
+        max-width: var(--buy-text-width);
+    }
+}
+
+
+
+.buy__body {
+    --input-padding-r: 40px;
+    height: calc(100vh - var(--headerHeight));
+    position: relative;
+    margin: 0 auto;
+
+    padding: 0 0 100px 0;
+    max-width: 1040px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 31px;
+
+    .blur-blue {
+        position: absolute;
+        bottom: -90%;
+        left: -60%;
+        z-index: -1;
+    }
+
+    .blur-orange {
+        position: absolute;
+        top: -30%;
+        right: -40%;
+        z-index: -1;
+    }
+
+
+
+}
+
+@media screen and (max-height: 800px) and (min-width: 1023px) {
+    .buy__body {
+        height: auto;
+        margin-bottom: 40px;
+        margin-top: 32px;
+    }
+}
+
+.buy__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+    width: 100%;
+}
+
+.container__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &.column-input {
+        gap: 24px;
+        margin-top: 32px;
+    }
+
+}
+
+.time {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    align-self: center;
+    color: var(--text-200);
+}
+
+
+
+
+@media screen and (max-width:1170px) {
+    .buy {
+        --buy-text-width: 100%;
+    }
+
+    .buy__body {
+        margin-left: var(--mg-lr);
+        margin-right: var(--mg-lr);
+    }
+
+}
+
+@media screen and (max-width:1023px) {
+
+    .buy__container {
+        flex-direction: row-reverse;
+        gap: 24px;
+    }
+
+    .buy__body {
+        height: auto;
+        margin-top: 64px;
+        margin-bottom: 300px;
+        align-items: center;
+        gap: 80px;
+
+        .blur-blue {
+            bottom: -120%;
+        }
+    }
+}
+
+@media screen and (max-width:739px) {
+
+    :root {
+        --btn-full-w: auto;
+    }
+
+    .buy {
+        --buy-text-width: none;
+    }
+
+    .buy__title {
+        text-align: center;
+    }
+
+    .buy__body {
+        gap: 48px;
+        margin-top: 56px;
+        margin-bottom: 80px;
+
+        .blur-blue {
+            position: absolute;
+            bottom: -50%;
+            left: -60%;
+        }
+    }
+
+    .buy__container {
+        gap: 48px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-input {
+        margin-top: 0;
+    }
+
+
+}
