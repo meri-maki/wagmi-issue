@@ -1,0 +1,2 @@
+"use strict";(this.myApptooncoinweb=this.myApptooncoinweb||[]).push([[289],{5289:function(e,o,t){t.r(o);var n=null;"undefined"!=typeof WebSocket?n=WebSocket:"undefined"!=typeof MozWebSocket?n=MozWebSocket:void 0!==t.g?n=t.g.WebSocket||t.g.MozWebSocket:"undefined"!=typeof window?n=window.WebSocket||window.MozWebSocket:"undefined"!=typeof self&&(n=self.WebSocket||self.MozWebSocket),o.default=n}}]);
+//# sourceMappingURL=289.bd625566.js.map

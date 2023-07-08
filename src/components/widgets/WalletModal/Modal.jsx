@@ -11,7 +11,6 @@ export default function Modal({ onClose, connect, connectors, error }) {
 						return (
 							<button style={{ display: connector.ready ? "flex" : "none" }} key={connector.id} onClick={() => connect({ connector })} className="modal__btn">
 								<div className="gradient"></div>
-								<img src={`./images/${connector.id}-img.svg`} alt={connector.name} />
 								<h4>{connector.name}</h4>
 								{connector.id === "metaMask" ? <p>Connect to your {connector.name} wallet</p> : <p>Use {connector.name} to connect</p>}
 								<p>{!connector.ready && " (unsupported)"}</p>
@@ -24,7 +23,7 @@ export default function Modal({ onClose, connect, connectors, error }) {
 				</AnimateHeight>
 
 				<button className="modal__close" onClick={onClose}>
-					<img src="./images/icons/close.svg" />
+					<div className="close" />
 				</button>
 			</div>
 		</div>

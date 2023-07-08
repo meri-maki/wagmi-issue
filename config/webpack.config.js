@@ -14,7 +14,7 @@ module.exports = function (buildMode) {
 
 	const htmlFiles = [
 		{
-			template: "public/purchase.html",
+			template: "public/index.html",
 			chunks: ["common", "purchase"],
 		},
 	]

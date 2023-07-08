@@ -66,11 +66,6 @@ export default function MintForm({ isConnected }) {
 				<AnimateHeight style={{ flexShrink: 0, width: "100%" }} duration={500} height={purchaseError ? "auto" : 0}>
 					<div className="error">{purchaseErrorMessage}</div>
 				</AnimateHeight>
-				<AnimateHeight style={{ flexShrink: 0, width: "100%" }} duration={500} height={purchaseStatus ? "auto" : 0}>
-					<div className="status">
-						Transaction status: <span>{purchaseStatusSpan}</span>
-					</div>
-				</AnimateHeight>
 				<AnimateHeight style={{ flexShrink: 0, width: "100%" }} duration={500} height={isSuccess ? "auto" : 0}>
 					<div className="thanks">
 						<span>Thank you for your purchase!</span>
