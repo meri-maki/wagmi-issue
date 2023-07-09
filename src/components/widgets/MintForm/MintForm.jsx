@@ -35,7 +35,7 @@ export default function MintForm({ isConnected }) {
 
 	return (
 		<form
-			className="form reveal order-1"
+			className="form order-1"
 			onSubmit={(e) => {
 				e.preventDefault()
 				console.log("send")

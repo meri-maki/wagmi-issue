@@ -4,7 +4,7 @@ import "../styles/ui/index.scss"
 import "../styles/purchase-page/purchase.scss"
 
 import { createRoot } from "react-dom/client"
-import { configureChains, createConfig, WagmiConfig, useAccount, useConfig } from "wagmi"
+import { configureChains, createConfig, WagmiConfig } from "wagmi"
 import { goerli, mainnet } from "wagmi/chains"
 import { infuraProvider } from "wagmi/providers/infura"
 import { publicProvider } from "wagmi/providers/public"
