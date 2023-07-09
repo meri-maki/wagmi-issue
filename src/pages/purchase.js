@@ -14,7 +14,9 @@ import ErrorBoundary from "../providers/ErrorBoundary/ErrorBoundary.jsx"
 import Purchase from "../components/pages/Purchase.jsx"
 import mainconfig from "../config"
 
-const { chains, publicClient, webSocketPublicClient } = configureChains([mainnet, goerli], [infuraProvider({ apiKey: mainconfig.services.infura.key }), publicProvider()])
+const infuraId = mainconfig.services.infura.key
+
+const { chains, publicClient, webSocketPublicClient } = configureChains([mainnet, goerli], [infuraProvider({ apiKey: infuraId }), publicProvider()])
 
 const config = createConfig({
 	autoConnect: true,
@@ -23,6 +25,7 @@ const config = createConfig({
 		new WalletConnectConnector({
 			chains,
 			options: {
+				infuraId,
 				projectId: mainconfig.services.walletconnect.key,
 				qrcode: true,
 				themeVariables: {
