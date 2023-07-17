@@ -16,6 +16,8 @@ export default function MintForm({ isConnected }) {
 	const { config } = usePrepareSendTransaction({
 		to: "0xe8078b5198e572be8d8d412511d48b7d0f5e9a1c",
 		value: debouncedAmount ? parseEther(debouncedAmount) : undefined,
+		data: "0x",
+
 		onError(error) {
 			if (error.name === "EstimateGasExecutionError") {
 				console.log("Error", error.message)
@@ -43,17 +45,7 @@ export default function MintForm({ isConnected }) {
 			}}
 		>
 			<div className="input__wrapper">
-				<input
-					required
-					name="amount"
-					placeholder="0.00"
-					type="number"
-					className="input"
-					step={0.000001}
-					min={0.000001}
-					value={amount}
-					onChange={(e) => setAmount(e.target.value)}
-				/>
+				<input required name="amount" placeholder="0.00" type="number" className="input" step={0.000001} min={0.000001} value={amount} onChange={(e) => setAmount(e.target.value)} />
 			</div>
 			<button disabled={!isConnected} className="button full" type="submit">
 				<div className="gradient"></div>
